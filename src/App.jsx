@@ -3,7 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 
-
+import Menu from "./components/Menu";
 import AllCom from "./components/All";
 import FullStackDev from "./components/FullStack";
 import DataScience from "./components/DataScience";
@@ -14,14 +14,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <BrowserRouter>
-      <AllCom></AllCom>
+      <BrowserRouter>  <Menu></Menu>
+      
         <Routes>
-          <Route path="/AllCom" element={<AllCom />}></Route>
+          <Route exact path="/" element={<AllCom />}></Route>
           <Route
-            path="/fullStackDevelopment"
-            element={<FullStackDev />}
-          ></Route>
+            path="/fullStackDevelopment" element={<FullStackDev />}></Route>
           <Route path="/dataScience" element={<DataScience />}></Route>
           <Route path="/cyberSecurity" element={<CyberSecurity />}></Route>
           <Route path="/career" element={<Career />}></Route>

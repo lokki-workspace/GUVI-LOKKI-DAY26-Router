@@ -3,7 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 
-import Menu from "./components/Menu";
+
 import AllCom from "./components/All";
 import FullStackDev from "./components/FullStack";
 import DataScience from "./components/DataScience";
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Menu></Menu>
+      <AllCom></AllCom>
         <Routes>
           <Route path="/AllCom" element={<AllCom />}></Route>
           <Route
